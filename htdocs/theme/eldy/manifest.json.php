@@ -155,11 +155,11 @@ if (getDolGlobalString('MAIN_MANIFEST_APPLI_LOGO_URL')) {
 	}
 }
 
-// Add Dolibarr std icon
+// Add Qutaifan icon as default
 if (empty($manifest->icons)) {
 	$icon = new stdClass();
-	$icon->src = DOL_URL_ROOT.'/theme/dolibarr_256x256_color.png';
-	$icon->sizes = "256x256";
+	$icon->src = DOL_URL_ROOT.'/theme/common/qutaifan_icon_512.png';
+	$icon->sizes = "512x512";
 	$icon->type = "image/png";
 	$manifest->icons[] = $icon;
 }

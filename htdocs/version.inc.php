@@ -33,7 +33,7 @@
  */
 
 if (!defined('DOL_APPLICATION_TITLE')) {
-	define('DOL_APPLICATION_TITLE', 'Dolibarr');
+	define('DOL_APPLICATION_TITLE', 'Qutaifan ERP');
 }
 
 // The major version of Dolibarr

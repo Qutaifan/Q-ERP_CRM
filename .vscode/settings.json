@@ -1,0 +1,73 @@
+{
+  // PHP Intelephense Configuration
+  "intelephense.files.exclude": [
+    "**/install/**",
+    "**/vendor/**",
+    "**/node_modules/**",
+    "**/.git/**",
+    "**/documents/**"
+  ],
+  
+  // Add stubs for extensions used by Dolibarr
+  "intelephense.stubs": [
+    "apache",
+    "bcmath",
+    "bz2",
+    "calendar",
+    "Core",
+    "curl",
+    "date",
+    "dom",
+    "exif",
+    "fileinfo",
+    "filter",
+    "gd",
+    "hash",
+    "iconv",
+    "imap",
+    "intl",
+    "json",
+    "ldap",
+    "libxml",
+    "mbstring",
+    "mysqli",
+    "openssl",
+    "pcre",
+    "PDO",
+    "pdo_mysql",
+    "Phar",
+    "Reflection",
+    "session",
+    "SimpleXML",
+    "soap",
+    "SPL",
+    "standard",
+    "tokenizer",
+    "xdebug",
+    "xml",
+    "xmlreader",
+    "xmlwriter",
+    "zip",
+    "zlib"
+  ],
+
+  // Environment settings
+  "intelephense.environment.phpVersion": "8.2.30",
+  "intelephense.environment.includePaths": [
+    "htdocs"
+  ],
+
+  // Disable some noisy diagnostics for legacy code
+  "intelephense.diagnostics.undefinedFunctions": false,
+  "intelephense.diagnostics.undefinedMethods": false,
+
+  // PHP settings
+  "php.validate.enable": false,
+  "php.suggest.basic": false,
+
+  // File associations
+  "files.associations": {
+    "*.inc.php": "php",
+    "*.class.php": "php"
+  }
+}

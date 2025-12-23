@@ -1,0 +1,17 @@
+services:
+  mariadb:
+    image: mariadb:10.6
+    container_name: dolibarr_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: dolibarr
+      MYSQL_USER: dolibarr
+      MYSQL_PASSWORD: dolibarr_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - dolibarr_db_data:/var/lib/mysql
+
+volumes:
+  dolibarr_db_data:

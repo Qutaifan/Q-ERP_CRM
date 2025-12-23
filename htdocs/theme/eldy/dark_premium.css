@@ -1,0 +1,190 @@
+/* Qutaifan ERP Premium Dark Mode Theme */
+/* Navy Blue Professional Color Scheme */
+
+/* Force dark mode when THEME_DARKMODEENABLED = 2 */
+@media not print {
+    :root {
+        /* Premium Navy Blue Palette */
+        --colorbackhmenu1: #0D1B2A;          /* Top menu - deep navy */
+        --colorbackvmenu1: #1B2838;          /* Left menu - dark navy */
+        --colorbacktitle1: #1B3A4B;          /* Section titles - navy accent */
+        --colorbacktabcard1: #0A1628;        /* Tab cards - darkest */
+        --colorbacktabactive: #4A9BD9;       /* Active tab - bright blue */
+        --colorbacklineimpair1: #0D1B2A;     /* Odd rows */
+        --colorbacklineimpair2: #0F2236;     /* Odd rows alt */
+        --colorbacklinepair1: #142535;       /* Even rows */
+        --colorbacklinepair2: #162840;       /* Even rows alt */
+        --colorbacklinepairhover: #1B3A4B;   /* Row hover */
+        --colorbacklinepairchecked: #2B5278; /* Selected row */
+        --colorbackbody: #0A1628;            /* Main background */
+        --colorbackmobilemenu: #050D18;      /* Mobile menu */
+        --colorbackgrey: #0D1B2A;            /* Grey backgrounds */
+        
+        /* Text Colors */
+        --colortext: #E8EEF4;                /* Main text - soft white */
+        --colortexttitle: #FFFFFF;           /* Titles - pure white */
+        --colortexttitlenotab: #E8EEF4;
+        --colortexttitlenotab2: #B8C8D8;
+        --colortextlink: #4A9BD9;            /* Links - bright blue */
+        --colortexttitlelink: #5AABE9;       /* Title links */
+        --colortextbackhmenu: #FFFFFF;       /* Top menu text */
+        --colortextbackvmenu: #E8EEF4;       /* Left menu text */
+        --colortextbacktab: #E8EEF4;         /* Tab text */
+        
+        /* Accent Colors */
+        --colortopbordertitle1: #4A9BD9;     /* Top border accent */
+        --colorboxstatsborder: #2B5278;      /* Stats box border */
+        --colorboxiconbg: #1B3A4B;           /* Icon backgrounds */
+        
+        /* Form Elements */
+        --inputbackgroundcolor: #142535;
+        --inputbackgroundcolordisabled: #0D1B2A;
+        --inputcolordisabled: #6B7B8B;
+        --inputbordercolor: #2B5278;
+        
+        /* Status Colors */
+        --listetotal: #4A9BD9;               /* List totals */
+        --fieldrequiredcolor: #FFB347;       /* Required fields */
+        --amountremaintopaycolor: #FF6B6B;   /* Amounts due */
+        --amountpaymentcomplete: #5ADB95;    /* Paid amounts */
+        
+        /* Misc */
+        --tooltipbgcolor: #1B3A4B;
+        --tooltipfontcolor: #E8EEF4;
+        --dolgraphbg: #0A1628;
+        --refidnocolor: #E8EEF4;
+        --tableforfieldcolor: #B8C8D8;
+        --infoboxmoduleenabledbgcolor: linear-gradient(135deg, #0D1B2A, #1B3A4B);
+        --tablevalidbgcolor: #1B3A4B;
+        --colorblack: #FFFFFF;
+        --colorwhite: #0A1628;
+    }
+    
+    /* Body styling */
+    body, button {
+        color: #E8EEF4 !important;
+        background-color: #0A1628;
+    }
+    
+    /* Premium card styling */
+    .fiche, .tabBar, .fichecenter {
+        background: linear-gradient(180deg, #0D1B2A 0%, #0A1628 100%);
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+    
+    /* Premium buttons */
+    .button, .butAction {
+        background: linear-gradient(135deg, #4A9BD9 0%, #2B5278 100%) !important;
+        border: none !important;
+        border-radius: 8px !important;
+        color: #FFFFFF !important;
+        box-shadow: 0 2px 8px rgba(74, 155, 217, 0.3);
+        transition: all 0.3s ease;
+    }
+    
+    .button:hover, .butAction:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 16px rgba(74, 155, 217, 0.5);
+    }
+    
+    /* Left menu premium styling */
+    #id-left {
+        background: linear-gradient(180deg, #0D1B2A 0%, #1B2838 100%);
+        border-right: 1px solid #2B5278;
+    }
+    
+    .vmenu a {
+        color: #B8C8D8 !important;
+        transition: all 0.2s ease;
+    }
+    
+    .vmenu a:hover, .vmenu a.active {
+        color: #4A9BD9 !important;
+        background: rgba(74, 155, 217, 0.1);
+        border-left: 3px solid #4A9BD9;
+    }
+    
+    /* Top menu premium styling */
+    #tmenu_tooltip, .tmenusel, .tmenu {
+        background: linear-gradient(180deg, #0D1B2A 0%, #142535 100%) !important;
+    }
+    
+    .tmenu a {
+        color: #E8EEF4 !important;
+    }
+    
+    .tmenusel {
+        border-bottom: 3px solid #4A9BD9 !important;
+    }
+    
+    /* Input fields */
+    input, select, textarea {
+        background-color: #142535 !important;
+        border: 1px solid #2B5278 !important;
+        color: #E8EEF4 !important;
+        border-radius: 6px !important;
+    }
+    
+    input:focus, select:focus, textarea:focus {
+        border-color: #4A9BD9 !important;
+        box-shadow: 0 0 0 3px rgba(74, 155, 217, 0.2) !important;
+    }
+    
+    /* Tables */
+    table.liste {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    
+    table.liste th {
+        background: #1B3A4B !important;
+        color: #FFFFFF !important;
+        border-bottom: 2px solid #4A9BD9;
+    }
+    
+    /* KPI Cards styling */
+    .info-box {
+        background: linear-gradient(135deg, #1B3A4B 0%, #0D1B2A 100%);
+        border-radius: 12px;
+        border: 1px solid #2B5278;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    }
+    
+    .info-box-icon {
+        background: linear-gradient(135deg, #4A9BD9 0%, #2B5278 100%);
+        border-radius: 10px;
+    }
+    
+    /* Scrollbar styling */
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #0D1B2A;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #2B5278;
+        border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #4A9BD9;
+    }
+    
+    /* Login page special styling */
+    .login_center {
+        background: linear-gradient(135deg, #0D1B2A 0%, #1B3A4B 50%, #0D1B2A 100%);
+    }
+    
+    .login_block {
+        background: rgba(13, 27, 42, 0.95);
+        backdrop-filter: blur(10px);
+        border: 1px solid #2B5278;
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    }
+}

@@ -9382,4 +9382,10 @@ $mobileCssPath = __DIR__.'/mobile.css';
 if (file_exists($mobileCssPath)) {
     readfile($mobileCssPath);
 }
+
+// Include Qutaifan premium dark theme CSS
+$darkCssPath = __DIR__.'/dark_premium.css';
+if (file_exists($darkCssPath)) {
+    readfile($darkCssPath);
+}
 ?>

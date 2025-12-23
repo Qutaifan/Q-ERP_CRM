@@ -1,0 +1,12 @@
+tunnel: qutaifan-erp
+ingress:
+  # ERP System (Dolibarr)
+  - hostname: erp.Qutaifan.com
+    service: http://localhost:80
+
+  # Corporate Website (Static Build)
+  # We will run a local web server on port 3000 serving the 'dist' folder
+  - hostname: www.Qutaifan.com
+    service: http://localhost:3000
+
+  - service: http_status:404

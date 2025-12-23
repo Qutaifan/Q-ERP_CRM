@@ -1,0 +1,32 @@
+<?php
+// Dolibarr configuration file
+//
+// Warning: Be sure not to add line feed or spaces after closing php tag!
+
+// Main parameters
+$dolibarr_main_url_root='https://erp.qutaifan.com';
+$dolibarr_main_document_root='q:/Projects/Q-ERP_CRM-main/Q-ERP_CRM-main/htdocs';
+$dolibarr_main_data_root='q:/Projects/Q-ERP_CRM-main/Q-ERP_CRM-main/documents';
+
+// Database parameters
+$dolibarr_main_db_host='localhost';
+$dolibarr_main_db_port='3306';
+$dolibarr_main_db_name='dolibarr';
+$dolibarr_main_db_user='dolibarr';
+$dolibarr_main_db_pass='dolibarr_password';
+$dolibarr_main_db_type='mysqli';
+$dolibarr_main_db_character_set='utf8';
+$dolibarr_main_db_collation='utf8_unicode_ci';
+
+// Authentication
+$dolibarr_main_authentication='dolibarr';
+
+// Security
+$dolibarr_main_prod='0';
+$dolibarr_main_force_https='0';
+$dolibarr_nocsrfcheck='0';
+$dolibarr_main_instance_unique_id='fa66a011ed0c8965f3d3d0f0a4f5f5f5'; // Random ID
+
+// Others
+$dolibarr_main_db_prefix='llx_';
+$force_install_lockinstall='0';

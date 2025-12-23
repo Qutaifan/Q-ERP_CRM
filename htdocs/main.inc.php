@@ -1726,6 +1726,10 @@ function top_htmlhead($head, $title = '', $disablejs = 0, $disablehead = 0, $arr
 			print '<meta name="theme-color" content="rgb(' . getDolGlobalString('THEME_ELDY_TOPMENU_BACK1').')">'."\n";
 		}
 
+		// Qutaifan ERP Dashboard Enhancements
+		print '<link rel="stylesheet" href="'.DOL_URL_ROOT.'/theme/eldy/dashboard.css">'."\n";
+		print '<script src="'.DOL_URL_ROOT.'/theme/eldy/dashboard.js" defer></script>'."\n";
+
 		// Auto refresh page
 		if (GETPOSTINT('autorefresh') > 0) {
 			print '<meta http-equiv="refresh" content="'.GETPOSTINT('autorefresh').'">';

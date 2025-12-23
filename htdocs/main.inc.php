@@ -55,6 +55,11 @@ if (!empty($_SERVER['MAIN_SHOW_TUNING_INFO'])) {
 
 require __DIR__.'/waf.inc.php';
 
+// Qutaifan ERP Security Headers (CSP, HSTS, XSS protection)
+if (file_exists(__DIR__.'/security_headers.inc.php')) {
+    require __DIR__.'/security_headers.inc.php';
+}
+
 // Check consistency of NOREQUIREXXX DEFINES
 if ((defined('NOREQUIREDB') || defined('NOREQUIRETRAN')) && !defined('NOREQUIREMENU')) {
 	print 'If define NOREQUIREDB or NOREQUIRETRAN are set, you must also set NOREQUIREMENU or not set them.';
